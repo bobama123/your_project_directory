@@ -1,0 +1,55 @@
+#1) Desribe the Problem:
+
+
+# As a user
+# So that I can improve my grammar
+# I want to verify that a text starts with a capital letter 
+# and ends with a suitable sentence-ending punctuation mark.
+
+
+#2) Design the Function Signature:
+
+def check_text(text):
+    # Parameters:
+    #   text: a string containing words e.g. "Hello World!"
+    # Return:
+    #   True or False
+    #       E.g. True
+    pass
+
+
+#3) Create Examples as Tests:
+
+# 1 - If we give it an empty string
+#     It will return False
+
+check_text("")
+# = False
+
+# 2 - If we give it a text with capital letter and punctuation at end.
+#     It will return True.
+
+check_text("Hello World!")
+# = True
+
+# 3 - If we give it a text with capital letter and punctuation in text.
+#     It will return False.
+
+check_text("Hello World, I am here")
+# = False
+
+# 4 - If we give it a text with no capital letter and punctuation at end.
+#     It will return False.
+
+check_text("hello World, I am here!")
+# = False
+
+# 5 - If we give it a text with no capital letter and no punctuation at end.
+#     It will return False.
+
+check_text("hello World, I am here")
+# = False
+
+
+
+

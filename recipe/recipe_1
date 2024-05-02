@@ -1,0 +1,38 @@
+#1) Desribe the Problem:
+
+# As a user
+# So that I can manage my time
+# I want to see an estimate of reading time for a text, assuming that
+# i can read 200 words a minute.
+
+
+#2) Design the Function Signature:
+
+def reading_time(text):
+    # Parameters:
+    #   text: a string containing words e.g. "Hello World"
+    # Return:
+    #   time (in seconds), which represents how long the text will take
+    #       to read at 200 words a minute (60 seconds)
+    #       E.g. 0.6 seconds
+    pass
+
+#3) Create Examples as Tests:
+
+# 1 - If we give it an empty string
+#     It will return 0 seconds.
+
+reading_time("")
+# = 0 seconds
+
+# 2 - If we give it a text with 2 words
+#     It will return 0.6 seconds.
+
+reading_time("Hello World")
+# = 0.6 seconds
+
+# 3 - If we give it a text with 5 words and a comma.
+#     It will return 1.5 seconds.
+
+reading_time("Hello World, I am here")
+# = 1.5 seconds
